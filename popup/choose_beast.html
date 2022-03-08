@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_beast.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+
+    <style>
+      #myForm {display: none;}
+    </style>
+  </head>
+
+<body>
+  <div class="main-container">
+  <h3 class="mb-3">NSDL Data Autofill</h3>
+    <table class="table table-sm table-bordered table-striped" id="mainTable">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Transferee PAN</th>
+          <th scope="col">Agreement Dt</th>
+          <th scope="col">Project</th>
+          <!-- <th scope="col">Transferer Pan</th> -->
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+
+    
+    <div id="myForm">
+      <div class="row g-3">
+        <div class="col-12">
+          <p>Please Enter all these Details</p>
+        </div>
+        <input type="hidden" class="form-control" name="buyerPan">
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="Acknowledge No" aria-label="City" name="acknoledge1">
+        </div>
+        <div class="col-12 mt-3">
+          <input type="text" class="form-control" placeholder="Field 2" name="acknoledge2">
+        </div>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-primary markCompleteSubmit" onclick="markCompleteSubmit(this)">Save changes</button>
+      <a class="ml-2" href="#" data-bs-dismiss="modal">Cancel</a>
+    </div>
+  </div>
+
+
+  <script src="choose_beast.js"></script>
+  <!-- <script src="content_scripts/jquery.min.js"></script> -->
+  <script src="fetch_data.js"></script>
+</body>
+
+</html>

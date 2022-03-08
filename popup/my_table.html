@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_beast.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+  </head>
+
+<body>
+  <button id="tbtn">T BTN</button>
+  <div class="main-container">
+    <table class="table table-sm table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Transferee Name</th>
+          <th scope="col">Transferee Pan</th>
+          <th scope="col">Transferer Name</th>
+          <th scope="col">Transferer Pan</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>CPLPB1555</td>
+          <td>mdo</td>
+          <td>CPLPB12334</td>
+          <td><a href="#" class="btn btn-outline-primary btn-sm click-me" title="Click here to populate fields in textbox" data-form_1='{"PAN_purchaser":"CPLPB9654L","PAN_purchaser_confirm":"CPLPB9654L","PAN_seller":"CPLPB9653L","PAN_seller_confirm":"CPLPB9653L"}'>Populate</a>  </td>
+          <!-- <td><a href="#" class="btn btn-outline-primary btn-sm click-me" title="Click here to populate fields in textbox" data-nid='{"foo":"bae"}'>Populate</a>  </td> -->
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Mark</td>
+          <td>CPLPB12334</td>
+          <td>mdo</td>
+          <td>CPLPB12334</td>
+          <td><a href="#" class="btn btn-outline-primary btn-sm click-me" title="Click here to populate fields in textbox">Populate</a>  </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+  </div>
+  <script src="choose_beast.js"></script>
+  <script src="fetch_data.js"></script>
+</body>
+
+</html>

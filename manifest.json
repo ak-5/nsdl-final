@@ -1,0 +1,39 @@
+{
+
+  "description": "Fetches data from excel and auto fills form",
+  "manifest_version": 2,
+  "name": "VJ Form AutoFill",
+  "version": "1.0",
+  "homepage_url": "https:vjpartners.co.in/ongoing/v7_new/vj-sales-dashboard-live/public/",
+  "icons": {
+    "48": "icons/icons8-sun-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": 
+    [
+        {
+            "matches":["<all_urls>"],
+            "js":["content_scripts/jquery.min.js"],
+            "run_at": "document_end"
+        }
+    ],
+
+  "browser_action": {
+    "default_icon": "icons/icons8-sun-48.png",
+    "theme_icons": [{
+        "light": "icons/icons8-sun-48.png",
+        "dark": "icons/icons8-sun-48.png",
+        "size": 32
+    }],
+    "default_title": "Beastify",
+    "default_popup": "popup/choose_beast.html"
+  },
+  "web_accessible_resources": [
+    "beasts/*.jpg"
+  ]
+
+}
